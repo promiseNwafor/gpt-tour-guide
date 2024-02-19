@@ -1,3 +1,5 @@
+'use client'
+
 import { useMutation, useQueryClient } from '@tanstack/react-query'
 import {
   TourResponse,
@@ -41,6 +43,7 @@ const NewTour = () => {
   if (isPending) {
     return <span className='loading loading-lg'></span>
   }
+
   return (
     <>
       <form onSubmit={handleSubmit} className='max-w-2xl'>
